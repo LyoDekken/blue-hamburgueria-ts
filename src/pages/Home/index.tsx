@@ -1,8 +1,11 @@
+import Menu from "../../components/Menu";
+import * as Styled from "./stlyes";
+
 export default function Home() {
   return (
-    <div className="container">
+    <Styled.HomeContainer>
       {/*------------------------------------------------*/}
-      <div className="menu-container"></div>
+      <Menu />
       {/*------------------------------------------------*/}
       <div className="home-container">
         <header>
@@ -66,9 +69,11 @@ export default function Home() {
               <p>Sub Total</p>
               <p>R$0,00</p>
             </div>
-            <button>Pagar</button>
+            <button>
+              Pagar
+            </button>
         </div>
       </aside>
-    </div>
+    </Styled.HomeContainer>
   );
 }
